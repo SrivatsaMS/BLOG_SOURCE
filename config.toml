@@ -1,0 +1,134 @@
+baseurl = "https://srivatsams.github.io/"
+languageCode = "en-us"
+theme = "hello-friend-ng"
+
+DefaultContentLanguage = "en"
+
+[languages]
+  [languages.en]
+    title = "Life in a puzzling Universe."
+    homeSubtitle = ""
+    subtitle = ""
+    keywords = "Blog, Science, Aerospace"
+    copyright = "Srivatsa Subramanya"
+    readOtherPosts = "Read my other posts"
+
+  [languages.en.params.logo]
+      logoText = " SRIVATSA "
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpored = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[author]
+  name = "Srivatsa Subramanya"
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+ 
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+  showReadingTime = true
+
+  # Metadata mostly used in document's head
+  description = "My new homepage or blog"
+  keywords = "homepage, blog"
+  images = [""]
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  justifyContent = false  # Set "text-align: justify" to .content.
+
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+  themeColor = "#252627"
+
+  # googleAnalytics = ""
+
+  # Colors for favicons
+  [params.favicon.color]
+    mask = "#252627"
+    msapplication = "#252627"
+    theme = "#252627"
+
+[params.logo]
+    logoText     = "$"
+    logoHomeLink = "/"
+
+[permalinks]
+  post = "/:year/:month/:title/"
+    # Set true to remove the logo cursor entirely.
+    # logoCursorDisabled = false
+    # Set to a valid CSS color to change the cursor in the logo.
+    # logoCursorColor    = "#67a2c9"
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+     logoCursorAnimate  = "2s"
+
+# Social icons
+  [[params.social]]
+    name = "instagram"
+    weight = 1
+    url  = "https://instagram.com/vatsa_6"
+
+  [[params.social]]
+    name = "email"
+    weight = 2
+    url  = "mailto:vatsa_6@protonmail.com"
+
+  [[params.social]]
+    name = "linkedin"
+    weight = 3
+    url  = "https://www.linkedin.com/"
+
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "blogs"
+    name       = "Blogs"
+    weight = 1
+    url        = "/blogs/"
+  [[menu.main]]
+    identifier = "academics"
+    name       = "Academics"
+    weight = 3
+    url        = "/academics/"
+  [[menu.main]]
+    identifier = "tutorials"
+    name       = "Tutorials"
+    weight = 2
+    url        = "/tutorials/"
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    weight = 4
+    url        = "/About/"
